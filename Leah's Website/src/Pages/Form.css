@@ -1,0 +1,124 @@
+/* This page contains the main styling for the Contact Form */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+/* you can change colour of boarders by going to boarder and inputing a colour next to the thickness */
+
+.contact-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px 10px;
+}
+
+.contact-container h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #2c3e50; /* Text color for the heading "contact me" */
+  font-family: 'Lato', sans-serif;
+}
+
+.contact-container h3 {
+  font-size: 1.5rem;
+  margin: 30px 0 20px 0;
+  color: #2c3e50; /* Text color for the heading "if you want to get in touch..." */
+  line-height: 1.6;
+  font-family: 'Lato', sans-serif;
+}
+
+.contact-container p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin: 15px 0;
+  color: #333; /* Text color for the paragraph (all bottom info text) */
+  font-family: 'Lato', sans-serif;
+}
+
+.extended-underline { /* Underline for the "contact me" heading */
+  display: inline-block;
+  padding-inline: 50px;  
+  border-bottom: 2px solid; 
+  padding-bottom: 5px; 
+}
+
+.contact-container hr { /* Horizontal rule styling for form (delete this if you dont want line seperating form from "get in touch" text.) */
+  border: none;
+  height: 2px;
+  background-color: #ccc;
+  margin: 30px 0;
+}
+
+.contact-container form { /* Form container styling, change background colour of form section here */
+  max-width: 600px;
+  margin: 30px auto;
+}
+
+.contact-container label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  margin-top: 20px;
+  color: #2c3e50; /* Text color for the labels */
+  font-size: 1.1rem;
+  font-family: 'Lato', sans-serif;
+}
+
+.form-label-with-icon { /* Label with icon styling */
+  display: flex !important;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.contact-container input[type="text"],
+.contact-container input[type="email"],
+.contact-container textarea {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #ddd; /* Border for input fields, change colour here */
+  border-radius: 4px;
+  font-size: 1rem;
+  font-family: 'Lato', sans-serif;
+  box-sizing: border-box;
+}
+
+.contact-container textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+
+.contact-container input:focus,
+.contact-container textarea:focus {
+  outline: none;
+  border-color: gray; /* Border color on focus */
+}
+
+.contact-container button[type="submit"] {
+  background-color: gray; /* Background color for the submit button */
+  color: white; /* Text color for the submit button */
+  padding: 12px 40px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  font-family: 'Lato', sans-serif;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s;
+}
+
+.submit-button-with-icon {
+  display: flex !important;
+  align-items: center;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.contact-container button[type="submit"]:hover {
+  background-color: #53575a; /* Background color on hover */
+}
+
+.contact-info-with-icon { 
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}

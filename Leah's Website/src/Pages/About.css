@@ -1,0 +1,60 @@
+/* This page contains the styling for the About page */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px 10px;
+}
+
+.about-container h2 {
+  font-size: 1.5rem;
+  margin: 30px 0 20px 0;
+  color: #2c3e50; /* Text color for the subheadings "leah..... etc." */
+  line-height: 1.6;
+  font-family: 'Lato', sans-serif;
+}
+
+.about-container p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin: 15px 0;
+  color: #333; /* Text color for the paragraphs */
+  font-family: 'Lato', sans-serif;
+}
+
+.page-title { /* Page title styling */
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 1rem 1.5rem;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #2c3e50; /* Text color for the page title, "about" */
+  font-family: 'Lato', sans-serif;
+
+}
+
+.extended-underline { /* Underline styling for the page title */
+  display: inline-block;
+  padding-inline: 50px;  
+  border-bottom: 2px solid; 
+  padding-bottom: 5px; 
+}
+
+.about-image { /* Image styling */
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1.5rem;
+}
+
+
+
+

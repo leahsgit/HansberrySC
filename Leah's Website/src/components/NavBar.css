@@ -1,0 +1,64 @@
+/* This page contains the main styling for the Navigation Bar */
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+.navbar {
+  background-color: rgb(192, 189, 189); /* Background color for the navbar */
+  padding: 2rem 3rem; 
+  display: flex;
+  justify-content: space-between; /* Space between the logo and links */
+  align-items: center; 
+  min-height: 80px;
+}
+
+.navbar-logo {
+  color: #2c3e50; /* Text color for the logo */
+  font-size: 3rem;
+  font-weight: bolder;
+  line-height: 1.2;
+  font-family: 'Outfit', sans-serif;
+}
+
+.navbar-subtitle {
+  color: #2c3e50; /* Text color for the subtitle, "NDIS support coordinator" */
+  font-size: 1.2rem;
+  font-weight: bolder;
+  margin-top: 0.5rem;
+  font-family: 'Outfit', sans-serif;
+}
+
+/* Positioning and Styling for the navigation links, "about, contact" */
+
+.navbar-links { 
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 2.5rem;
+}
+
+.navbar-links li {
+  display: inline;
+}
+
+.navbar-links a {
+  color: #2c3e50; /* Text color for the links */
+  padding: 1rem 2rem;
+  transition: background-color 0.3s;
+  font-weight: bolder;
+  font-size: 1.3rem;
+  background-color: transparent;
+  display: inline-block;
+  font-family: 'Outfit', sans-serif;
+}
+
+.nav-link-with-icon {
+  display: flex !important; 
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.navbar-links a:hover {
+  background-color: #53575a;
+  border-radius: 4px;
+}

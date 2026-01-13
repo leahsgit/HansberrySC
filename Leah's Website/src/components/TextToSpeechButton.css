@@ -1,0 +1,33 @@
+/* this page contains the main styling for the TextToSpeechButton component */
+
+.tts-container { 
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.tts-button {
+  background-color: rgb(167, 165, 165); /* Background color for the button */
+  color: white; /* Text color for the button */
+  border: none;
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 5px; 
+  cursor: pointer; /* Cursor changes to pointer on hover */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center; /* Center the content within the button */
+}
+
+.tts-button:hover {
+  background-color: rgb(130, 128, 128); /* Background color on hover */
+}
+
+.tts-label {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #2c3e50; /* Text color for the label */
+}

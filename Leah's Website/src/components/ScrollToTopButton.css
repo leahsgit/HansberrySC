@@ -1,0 +1,19 @@
+/* This page contains the main styling for the ScrollToTopButton component */
+
+.scroll-to-top button {
+  position: fixed; 
+  bottom: 20px; 
+  right: 30px; 
+  z-index: 99; /* leave as it is */
+  background-color: #007bff; /* Background color for the button */
+  color: white; /* Text color for the button */
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer; /* Cursor changes to pointer on hover */
+  display: block; 
+}
+
+.scroll-to-top button:hover {
+  background-color: #0056b3; /* Background color on hover */
+}
