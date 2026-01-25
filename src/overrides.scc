@@ -1,0 +1,110 @@
+
+/* === Global theme overrides: safe, additive, and high-contrast === */
+
+/* 1) Make text fully opaque and improve defaults for dark */
+:root {
+  /* Keep color-scheme so native UI (forms) adapt properly */
+  color-scheme: light dark;
+
+  /* Dark is still the default, but use solid text color for legibility */
+  color: #e5e7eb;           /* solid, readable on #242424 */
+  background-color: #242424;
+}
+
+/* 2) Strengthen typography colors explicitly so components can't weaken them */
+html, body {
+  background-color: #242424;
+  color: #e5e7eb;           /* body text */
+}
+
+/* Headings should be brighter than body text on dark */
+h1, h2, h3, h4, h5, h6 {
+  color: #ffffff;
+}
+
+/* Paragraphs, lists, labels, small text: ensure solid color */
+p, li, dt, dd, span, label, small {
+  color: #e5e7eb;
+}
+
+/* Muted/secondary text that still meets contrast on dark */
+.muted, .text-muted, .subtitle, .helper-text {
+  color: #a7adb7;           /* secondary text on dark */
+}
+
+/* 3) Links: accessible contrast on dark, and a slightly brighter hover */
+a {
+  color: #8ab4ff;           /* readable on dark */
+  text-decoration: underline;
+}
+a:hover, a:focus {
+  color: #a9c6ff;
+}
+
+/* 4) Buttons: ensure readable text and clearer borders */
+button, .btn {
+  background-color: #1a1a1a;  /* keep existing look */
+  color: #f5f7ff;             /* readable on the dark button */
+  border: 1px solid #2a2f3a;
+}
+button:hover, .btn:hover {
+  border-color: #8ab4ff;
+}
+
+/* 5) Inputs, textareas, selects: raise contrast */
+input, textarea, select {
+  background-color: #151923;  /* dark surface */
+  color: #e5e7eb;
+  border: 1px solid #2a2f3a;
+}
+input::placeholder,
+textarea::placeholder {
+  color: #a7adb7;             /* secondary on dark */
+}
+
+/* 6) Cards, panels, nav, footer: consistent dark surfaces */
+.card, .panel, .navbar, header, footer, .surface, .box {
+  background-color: #151923;
+  color: #e5e7eb;
+  border-color: #2a2f3a;
+}
+
+/* 7) Respect users who prefer light mode (matches your original intent) */
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  html, body {
+    background-color: #ffffff;
+    color: #213547;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    color: #0e1116;
+  }
+  a {
+    color: #0b63ff;
+  }
+  a:hover, a:focus {
+    color: #0847b8;
+  }
+  button, .btn {
+    background-color: #f9f9f9;
+    color: #0e1116;
+    border: 1px solid #dcdfe4;
+  }
+  input, textarea, select {
+    background-color: #ffffff;
+    color: #213547;
+    border: 1px solid #dcdfe4;
+  }
+  input::placeholder,
+  textarea::placeholder {
+    color: #4a4f57;
+  }
+  .card, .panel, .navbar, header, footer, .surface, .box {
+    background-color: #f7f7f9;
+    color: #213547;
+    border-color: #dcdfe4;
+  }
+}
